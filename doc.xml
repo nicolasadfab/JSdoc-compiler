@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="docs" basedir="." name="jsdoc3-ant-task">
+
+	<property name="window.dir" value="${basedir}/build/jsdoc_toolkit-2.4.0/jsdoc-toolkit" />
+	<property name="source.dir" value="${basedir}/scripts" />
+	<property name="doc.dir" value="${basedir}/doc/api" />
+
+	<property name="tool.dir" value="${basedir}/build" />
+
+	<property name="jsdoctoolkit.dir" value="${tool.dir}/jsdoc_toolkit-2.4.0/jsdoc-toolkit" />
+
+	<target name="docs" description="Generates documentation">
+		<sequential>
+	        <echo message="Running JSDoc Toolkit"/>
+
+	        <!-- The java exe is told to run in the dir where our source files reside.
+	                 If we instead ran it from the dir that the build file is in and gave it
+	                 full paths to the source files the documentation would include the full
+	                 filesystem paths (c:\path\to\source\) instead of relative ones.
+	                 Since this command is running in the source dir, all of the paths
+	                 given to it must first traverse down a level (../) to get back to the
+	                 build file dir.
+	        -->
+	        <exec executable="java" dir="${source.dir}">
+	            <arg line="-jar ${window.dir}/jsrun.jar ${window.dir}/app/run.js" />
+	        	
+	            <!-- -d tells JSDoc toolkit where to output the documentation -->
+	            <arg line="-d=${doc.dir}" />
+	        	
+	            <!-- use the default template -->
+	            <arg line="-t=${jsdoctoolkit.dir}/templates/jsdoc" />
+	        	
+	            <!-- Create an arg element for each file you want to include in the documentation -->
+	            <arg line="${source.dir}/api/app.js" />
+			    <arg line="${source.dir}/api/util.js" />
+	            <arg line="${source.dir}/api/config.js" />
+	            <arg line="${source.dir}/api/promise.js" />
+	        </exec>
+	    </sequential>
+	</target>
+</project>

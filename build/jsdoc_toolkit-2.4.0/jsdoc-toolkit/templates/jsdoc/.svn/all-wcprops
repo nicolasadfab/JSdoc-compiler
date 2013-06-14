@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnprojects/!svn/ver/55762/ACCAPI/trunk/ahcom/build/jsdoc_toolkit-2.4.0/jsdoc-toolkit/templates/jsdoc
+END
+index.tmpl
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnprojects/!svn/ver/55762/ACCAPI/trunk/ahcom/build/jsdoc_toolkit-2.4.0/jsdoc-toolkit/templates/jsdoc/index.tmpl
+END
+publish.js
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnprojects/!svn/ver/55762/ACCAPI/trunk/ahcom/build/jsdoc_toolkit-2.4.0/jsdoc-toolkit/templates/jsdoc/publish.js
+END
+class.tmpl
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnprojects/!svn/ver/55762/ACCAPI/trunk/ahcom/build/jsdoc_toolkit-2.4.0/jsdoc-toolkit/templates/jsdoc/class.tmpl
+END
+symbol.tmpl
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnprojects/!svn/ver/55762/ACCAPI/trunk/ahcom/build/jsdoc_toolkit-2.4.0/jsdoc-toolkit/templates/jsdoc/symbol.tmpl
+END
+allfiles.tmpl
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnprojects/!svn/ver/55762/ACCAPI/trunk/ahcom/build/jsdoc_toolkit-2.4.0/jsdoc-toolkit/templates/jsdoc/allfiles.tmpl
+END
+allclasses.tmpl
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnprojects/!svn/ver/55762/ACCAPI/trunk/ahcom/build/jsdoc_toolkit-2.4.0/jsdoc-toolkit/templates/jsdoc/allclasses.tmpl
+END
